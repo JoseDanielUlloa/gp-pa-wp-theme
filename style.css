@@ -9,3 +9,15 @@ Version:      1.0.0
 Tags:     	light, three-columns, right-sidebar, responsive-layout, accessibility-ready
 Text Domain:  generatpress-theme-child
 */
+
+/***** Base styles *****/
+
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-size: 1em;
+  }
+  
