@@ -16,3 +16,11 @@ function generatepress_child_scripts(){
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'generatepress-style' ));
 }
 add_action( 'wp_enqueue_scripts', 'generatepress_child_scripts' );
+
+// Custom copyright
+add_filter( 'generate_copyright','tu_custom_copyright' );
+function tu_custom_copyright() {
+    ?>
+    	PadresAstutos.com
+    <?php
+}
