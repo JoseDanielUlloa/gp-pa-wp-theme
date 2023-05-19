@@ -13,11 +13,16 @@ Text Domain:  generatpress-theme-child
 /***** Base styles *****/
 
 html {
-    font-size: 18px;
-    scroll-behavior: smooth;
-  }
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
   
-  body {
-    font-size: 1em;
-  }
+body {
+  font-size: 1em;
+}
+
+/***** Blog posts *****/
   
+.inside-article .featured-image {
+  display: none;
+}
