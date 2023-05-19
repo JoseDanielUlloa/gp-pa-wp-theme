@@ -17,6 +17,13 @@ function generatepress_child_scripts(){
 }
 add_action( 'wp_enqueue_scripts', 'generatepress_child_scripts' );
 
+// Breadcrumbs
+add_action( 'generate_after_header', function() {
+    if ( !is_home() && function_exists('yoast_breadcrumb') ) {
+        yoast_breadcrumb( '<div class="grid-container grid-parent"><p id="breadcrumbs">','</p></div>' );
+    }
+} );
+
 // Custom copyright
 add_filter( 'generate_copyright','tu_custom_copyright' );
 function tu_custom_copyright() {
