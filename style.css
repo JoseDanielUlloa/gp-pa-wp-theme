@@ -21,8 +21,25 @@ body {
   font-size: 1em;
 }
 
-/***** Blog posts *****/
+/***** Posts navigation *****/
   
+.custom-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.custom-individual-post {
+  width: 300px;
+}
+
+.custom-individual-post h2 {
+  font-size: 1.5em;
+}
+
+/***** Blog posts *****/
+
 .inside-article .featured-image {
   display: none;
 }
