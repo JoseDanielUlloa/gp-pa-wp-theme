@@ -21,6 +21,13 @@ body {
   font-size: 1em;
 }
 
+/***** Index *****/
+  
+.index-hero-section {
+  padding: 30px 20px;
+  text-align: center;
+}
+
 /***** Posts navigation *****/
   
 .custom-wrapper {

@@ -19,6 +19,9 @@ get_header(); ?>
 
 	<div <?php generate_do_attr( 'content' ); ?>>
 		<main <?php generate_do_attr( 'main' ); ?>>
+			<div class="index-hero-section">
+				<h1>Consejos y tips para tener hijos felices, saludables y exitosos.</h1>
+			</div> 
 			<div class="custom-wrapper">
 				<?php
 				/**
