@@ -24,6 +24,15 @@ add_action( 'generate_after_header', function() {
     }
 } );
 
+// Menus
+function generatepress_child_menus() {
+    $locations = array(
+        'social' => "Redes sociales de Padres Astutos"
+    );
+    register_nav_menus($locations);
+}
+add_action('init', 'generatepress_child_menus');
+
 // Custom copyright
 add_filter( 'generate_copyright','tu_custom_copyright' );
 function tu_custom_copyright() {
