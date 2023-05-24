@@ -26,6 +26,7 @@ body {
 .index-hero-section {
   padding: 30px 20px;
   text-align: center;
+  display: none;
 }
 
 /***** Posts navigation *****/
@@ -50,4 +51,14 @@ body {
 
 .inside-article .featured-image {
   display: none;
+}
+
+/***** TABLET *****/
+
+@media only screen and (min-width: 640px) {
+  /***** Index *****/
+    
+  .index-hero-section {
+    display: block;
+  }
 }
