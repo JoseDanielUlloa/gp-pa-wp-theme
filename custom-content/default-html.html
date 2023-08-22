@@ -1,0 +1,22 @@
+<!-- Leap years -->
+<div class="custom-search">
+    <input id="leap-year-input" type="number" placeholder="Escribe el a&ntilde;o" onkeyup="onEnterLeap(event)">
+    <i class="fa-solid fa-magnifying-glass" onclick="isOrNotLeap()"></i>
+</div>
+<div id="result-calculator">
+</div>
+<script src="https://padresastutos.com/wp-content/themes/generatepress-theme-child/js/leap-years.js"></script>
+
+<!-- Korean Age -->
+<p>Ejemplo: <span id="korean-age-current-year"></span> + 1 - 2012 = <span id="korean-age-example-one-result"></span>.</p>
+
+<span id="korean-age-ka-number-result"></span>
+<span id="korean-age-ia-number-result"></span>
+
+<div class="custom-search">
+    <input id="korean-age-input" type="number" placeholder="A&ntilde;o de nacimiento" onkeyup="onEnterKA(event)">
+    <i class="fa-solid fa-magnifying-glass" onclick="koreanAgeCalculator()"></i>
+</div>
+<div id="result-calculator">
+    <br><p>Edad coreana: <span id="korean-age-result"></span>.</p>
+</div>
