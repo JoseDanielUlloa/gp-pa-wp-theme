@@ -16,6 +16,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php wp_head(); ?>
 	<!-- Google Adsense -->
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8581152465479186" crossorigin="anonymous"></script>
+	<!-- Impact -->
+	<meta name='ir-site-verification-token' value='-248195281'>
 </head>
 
 <body <?php body_class(); ?> <?php generate_do_microdata( 'body' ); ?>>
