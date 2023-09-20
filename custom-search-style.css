@@ -1,0 +1,36 @@
+/***** Custom search *****/
+
+.custom-search {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    border-bottom: 1px solid #979797;
+  }
+  
+  .custom-search input {
+    flex: 1;
+    background-color: transparent!important;
+    border: none!important;
+    font-size: 1.875em;
+    padding: 0 10px!important;
+  }
+  
+  .custom-search input:focus {
+    border: none!important;
+    outline: none!important;
+  }
+  
+  .custom-search i {
+    font-size: 1em;
+    padding-right: 10px;
+    cursor: pointer;
+  }
+
+/***** 1024px styles *****/
+  /***** Custom search *****/
+
+  @media only screen and (min-width: 1024px) {
+    .custom-search {
+        margin: 30px 20px 0;
+    }
+  }  
