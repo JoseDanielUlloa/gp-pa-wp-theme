@@ -1,7 +1,8 @@
 /***** Columns *****/
 
-.col-3, .col-4 {
+.col-3, .col-4, .col-12 {
     flex: 0 0 auto;
+    padding: 0 0.5rem;
 }
 
 .col-3 {
@@ -12,13 +13,25 @@
     width: 33.33333333%;
 }
 
-/***** Buttons *****/
+.col-12 {
+    width: 100%;
+}
+
+/***** Elements *****/
 
 .button_a, .button_h, .button_w, .button_s {
     background-color: rgb(241, 238, 233); 
     border-radius: 5px; 
     width: 100%; 
     margin: 5px;
+}
+
+.col-12 p {
+    margin: 0;
+}
+
+#bat_size {
+    font-size: 2em;
 }
 
 /***** 768px styles *****/
