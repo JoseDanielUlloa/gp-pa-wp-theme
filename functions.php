@@ -46,7 +46,7 @@ function tu_custom_copyright() {
 // Custom search form
 function custom_search_scripts() {
     if ( is_single(array(77, 128)) ) {
-    	wp_enqueue_style( 'custom-search-style', '//padresastutos.com/wp-content/themes/generatepress-theme-child/custom-search-style.css', null );
+    	wp_enqueue_style( 'custom-search-style', '/wp-content/themes/generatepress-theme-child/css/custom-search-style.css', null );
     }
 }
 add_action('wp_enqueue_scripts', 'custom_search_scripts');
