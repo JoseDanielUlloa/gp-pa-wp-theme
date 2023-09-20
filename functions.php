@@ -50,3 +50,11 @@ function custom_search_scripts() {
     }
 }
 add_action('wp_enqueue_scripts', 'custom_search_scripts');
+
+// Baseball bat size
+function baseball_bat_size_scripts() {
+    if ( is_single(array(77, 128)) ) {
+    	wp_enqueue_style( 'baseball-bat-size-style', '/wp-content/themes/generatepress-theme-child/css/baseball-bat-size-style.css', null );
+    }
+}
+add_action('wp_enqueue_scripts', 'baseball_bat_size_scripts');
