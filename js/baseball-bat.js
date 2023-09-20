@@ -396,11 +396,7 @@ for (var i = 6; i <= 18; i++) {
     var col = document.createElement("div");
     col.className = "col-3";
     var button = document.createElement("button");
-    // make background light blue
-    button.style.backgroundColor = "#F1EEE9";
     button.innerHTML = i;
-    button.style.borderRadius = "5px";
-    button.style.width = "100%";
 
     // give these buttons the class of button_a
     button.className = "button_a";
@@ -413,10 +409,6 @@ for (var i = 6; i <= 18; i++) {
         }
         this.style.backgroundColor = "#EC994B";
     }
-
-    // make spacing between the buttons
-    button.style.margin = "5px";
-
 
     col.appendChild(button);
     row_button.appendChild(col);
@@ -442,11 +434,7 @@ for (var i = 0; i < heights.length; i++) {
     var col = document.createElement("div");
     col.className = "col-4";
     var button = document.createElement("button");
-    // make background light blue
-    button.style.backgroundColor = "#F1EEE9";
     button.innerHTML = heights[i];
-    button.style.borderRadius = "5px";
-    button.style.width = "100%";
 
     // give these buttons the class of button_h
     button.className = "button_h";
@@ -459,9 +447,6 @@ for (var i = 0; i < heights.length; i++) {
         }
         this.style.backgroundColor = "#EC994B";
     }
-
-    // make spacing between the buttons
-    button.style.margin = "5px";
 
     col.appendChild(button);
     row_button.appendChild(col);
@@ -487,11 +472,7 @@ for (var i = 0; i < strengths.length; i++) {
     var col = document.createElement("div");
     col.className = "col-4";
     var button = document.createElement("button");
-    // make background light blue
-    button.style.backgroundColor = "#F1EEE9";
     button.innerHTML = strengths[i];
-    button.style.borderRadius = "5px";
-    button.style.width = "100%";
 
     // give these buttons the class of button_w
     button.className = "button_w";
@@ -504,9 +485,6 @@ for (var i = 0; i < strengths.length; i++) {
         }
         this.style.backgroundColor = "#EC994B";
     }
-
-    // make spacing between the buttons
-    button.style.margin = "5px";
 
     col.appendChild(button);
     row_button.appendChild(col);
@@ -532,11 +510,7 @@ for (var i = 0; i < skills.length; i++) {
     var col = document.createElement("div");
     col.className = "col-4";
     var button = document.createElement("button");
-    // make background light blue
-    button.style.backgroundColor = "#F1EEE9";
     button.innerHTML = skills[i];
-    button.style.borderRadius = "5px";
-    button.style.width = "100%";
 
     // give these buttons the class of button_s
     button.className = "button_s";
@@ -550,9 +524,6 @@ for (var i = 0; i < skills.length; i++) {
         this.style.backgroundColor = "#EC994B";
     }
 
-    // make spacing between the buttons
-    button.style.margin = "5px";
-
     col.appendChild(button);
     row_button.appendChild(col);
     }
@@ -564,7 +535,7 @@ row.className = "custom-wrapper";
 // make the 'Bat Size' h3
 var col = document.createElement("div");
 var h5 = document.createElement("h5");
-h5.innerHTML = "Tama&ntilde;o del bate recomendado:";
+h5.innerHTML = "Tama&ntilde;o del bate recomendado: ";
 h5.id = "bat_size_recommendation";
 col.appendChild(h5);
 row.appendChild(col);
@@ -572,10 +543,9 @@ calc.appendChild(row);
 
 // make the ???
 var col = document.createElement("div");
+col.className = "col-12";
 var p = document.createElement("p");
 p.id = "bat_size";
-p.style.fontSize = "2.5rem";
-p.style.color = "lightgrey";
 p.innerHTML = "???";
 col.appendChild(p);
 row.appendChild(col);
@@ -668,7 +638,6 @@ document.onclick = function() {
 
             // append the p with the id of p.id = "bat_size"; with the bat_sizing[i][4]
             var p = document.getElementById("bat_size");
-            p.style.color = "black";
             p.innerHTML = bat_sizing[i][4];
         }
     }
