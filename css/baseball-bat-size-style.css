@@ -1,0 +1,38 @@
+/***** Columns *****/
+
+.col-3, .col-4 {
+    flex: 0 0 auto;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33333333%;
+}
+
+/***** Buttons *****/
+
+.button_a, .button_h, .button_w, .button_s {
+    background-color: rgb(241, 238, 233); 
+    border-radius: 5px; 
+    width: 100%; 
+    margin: 5px;
+}
+
+/***** 768px styles *****/
+
+@media only screen and (min-width: 768px) {
+    .col-4 {
+        width: 25%;
+    }
+}
+
+/***** 992px styles *****/
+
+@media only screen and (min-width: 992px) {
+    .col-3, .col-4 {
+        width: 16.66666667%;
+    }
+} 

@@ -381,7 +381,6 @@ row.className = "custom-wrapper";
 var col = document.createElement("div");
 var h5 = document.createElement("h5");
 h5.innerHTML = "Edad: ";
-h5.className = "lead";
 col.appendChild(h5);
 row.appendChild(col);
 calc.appendChild(row);
@@ -395,7 +394,7 @@ calc.appendChild(row_button);
 // make a div for ages 6 to 18
 for (var i = 6; i <= 18; i++) {
     var col = document.createElement("div");
-    col.className = "col-3 col-md-3 col-lg-2";
+    col.className = "col-3";
     var button = document.createElement("button");
     // make background light blue
     button.style.backgroundColor = "#F1EEE9";
@@ -429,7 +428,6 @@ row.className = "custom-wrapper";
 var col = document.createElement("div");
 var h5 = document.createElement("h5");
 h5.innerHTML = "Estatura:";
-h5.className = "lead";
 col.appendChild(h5);
 row.appendChild(col);
 calc.appendChild(row);
@@ -442,7 +440,7 @@ calc.appendChild(row_button);
 var heights = ["Pequeño", "Promedio", "Alto"];
 for (var i = 0; i < heights.length; i++) {
     var col = document.createElement("div");
-    col.className = "col-4 col-md-3 col-lg-2";
+    col.className = "col-4";
     var button = document.createElement("button");
     // make background light blue
     button.style.backgroundColor = "#F1EEE9";
@@ -475,7 +473,6 @@ row.className = "custom-wrapper";
 var col = document.createElement("div");
 var h5 = document.createElement("h5");
 h5.innerHTML = "Complexi&oacute;n:";
-h5.className = "lead";
 col.appendChild(h5);
 row.appendChild(col);
 calc.appendChild(row);
@@ -488,7 +485,7 @@ calc.appendChild(row_button);
 var strengths = ["Pequeño", "Promedio", "Robusto"];
 for (var i = 0; i < strengths.length; i++) {
     var col = document.createElement("div");
-    col.className = "col-4 col-md-3 col-lg-2";
+    col.className = "col-4";
     var button = document.createElement("button");
     // make background light blue
     button.style.backgroundColor = "#F1EEE9";
@@ -521,7 +518,6 @@ row.className = "custom-wrapper";
 var col = document.createElement("div");
 var h5 = document.createElement("h5");
 h5.innerHTML = "Nivel:";
-h5.className = "lead";
 col.appendChild(h5);
 row.appendChild(col);
 calc.appendChild(row);
@@ -534,7 +530,7 @@ calc.appendChild(row_button);
 var skills = ["Principiante", "Intermedio", "Avanzado"];
 for (var i = 0; i < skills.length; i++) {
     var col = document.createElement("div");
-    col.className = "col-4 col-md-3 col-lg-2";
+    col.className = "col-4";
     var button = document.createElement("button");
     // make background light blue
     button.style.backgroundColor = "#F1EEE9";
@@ -563,15 +559,13 @@ for (var i = 0; i < skills.length; i++) {
 
 // make the results row
 var row = document.createElement("div");
-row.className = "custom-wrapper border m-2 p-2 rounded bg-light";
+row.className = "custom-wrapper";
 
 // make the 'Bat Size' h3
 var col = document.createElement("div");
 var h5 = document.createElement("h5");
 h5.innerHTML = "Tama&ntilde;o del bate recomendado:";
 h5.id = "bat_size_recommendation";
-h5.className = "mb-0";
-h5.className = "lead";
 col.appendChild(h5);
 row.appendChild(col);
 calc.appendChild(row);
@@ -583,7 +577,6 @@ p.id = "bat_size";
 p.style.fontSize = "2.5rem";
 p.style.color = "lightgrey";
 p.innerHTML = "???";
-p.className = "mb-0";
 col.appendChild(p);
 row.appendChild(col);
 
