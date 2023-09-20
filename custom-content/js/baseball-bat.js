@@ -379,7 +379,6 @@ calc.innerHTML = "";
 var row = document.createElement("div");
 row.className = "custom-wrapper";
 var col = document.createElement("div");
-col.className = "col-12 text-left";
 var h5 = document.createElement("h5");
 h5.innerHTML = "Edad: ";
 h5.className = "lead";
@@ -390,7 +389,7 @@ calc.appendChild(row);
 
 // make a row for all the buttons
 var row_button = document.createElement("div");
-row_button.className = "custom-wrapper text-center mx-auto";
+row_button.className = "custom-wrapper";
 calc.appendChild(row_button);
 
 // make a div for ages 6 to 18
@@ -428,7 +427,6 @@ for (var i = 6; i <= 18; i++) {
 var row = document.createElement("div");
 row.className = "custom-wrapper";
 var col = document.createElement("div");
-col.className = "col-12 text-left";
 var h5 = document.createElement("h5");
 h5.innerHTML = "Estatura:";
 h5.className = "lead";
@@ -438,7 +436,7 @@ calc.appendChild(row);
 
 // make a new set of buttons for height: Alto, Promedio, Pequeño
 var row_button = document.createElement("div");
-row_button.className = "custom-wrapper text-center mx-auto";
+row_button.className = "custom-wrapper";
 calc.appendChild(row_button);
 
 var heights = ["Pequeño", "Promedio", "Alto"];
@@ -475,7 +473,6 @@ for (var i = 0; i < heights.length; i++) {
 var row = document.createElement("div");
 row.className = "custom-wrapper";
 var col = document.createElement("div");
-col.className = "col-12 text-left";
 var h5 = document.createElement("h5");
 h5.innerHTML = "Complexi&oacute;n:";
 h5.className = "lead";
@@ -485,7 +482,7 @@ calc.appendChild(row);
 
 // make a new set of buttons for weight: Heavy, Promedio, Light
 var row_button = document.createElement("div");
-row_button.className = "custom-wrapper text-center mx-auto";
+row_button.className = "custom-wrapper";
 calc.appendChild(row_button);
 
 var strengths = ["Pequeño", "Promedio", "Robusto"];
@@ -522,7 +519,6 @@ for (var i = 0; i < strengths.length; i++) {
 var row = document.createElement("div");
 row.className = "custom-wrapper";
 var col = document.createElement("div");
-col.className = "col-12 text-left";
 var h5 = document.createElement("h5");
 h5.innerHTML = "Nivel:";
 h5.className = "lead";
@@ -532,7 +528,7 @@ calc.appendChild(row);
 
 // make a new set of buttons for skill level: Beginner, Intermediate, Adv.
 var row_button = document.createElement("div");
-row_button.className = "custom-wrapper text-center mx-auto";
+row_button.className = "custom-wrapper";
 calc.appendChild(row_button);
 
 var skills = ["Principiante", "Intermedio", "Avanzado"];
@@ -571,7 +567,6 @@ row.className = "custom-wrapper border m-2 p-2 rounded bg-light";
 
 // make the 'Bat Size' h3
 var col = document.createElement("div");
-col.className = "col-12 text-center";
 var h5 = document.createElement("h5");
 h5.innerHTML = "Tama&ntilde;o del bate recomendado:";
 h5.id = "bat_size_recommendation";
@@ -583,7 +578,6 @@ calc.appendChild(row);
 
 // make the ???
 var col = document.createElement("div");
-col.className = "col-12 text-center font-weight-bold";
 var p = document.createElement("p");
 p.id = "bat_size";
 p.style.fontSize = "2.5rem";
