@@ -372,38 +372,21 @@ var bat_sizing = [
 
 // find the div that has the id of bat_size_calc
 var calc = document.getElementById("bat_size_calc");
-calc.innerHTML = "";
-
-
-// make a row with a col-12 that has an h3 of "Select Age"
-var row = document.createElement("div");
-row.className = "custom-wrapper";
-var col = document.createElement("div");
-var h5 = document.createElement("h5");
-h5.innerHTML = "Edad: ";
-col.appendChild(h5);
-row.appendChild(col);
-calc.appendChild(row);
-
-
-// make a row for all the buttons
-var row_button = document.createElement("div");
-row_button.className = "custom-wrapper";
-calc.appendChild(row_button);
 
 // make a div for ages 6 to 18
+var age_wrapper = document.getElementById("age-wrapper");
 for (var i = 6; i <= 18; i++) {
     var col = document.createElement("div");
     col.className = "col-3";
     var button = document.createElement("button");
     button.innerHTML = i;
 
-    // give these buttons the class of button_a
-    button.className = "button_a";
+    // give these buttons the class of button-a
+    button.className = "button-a";
 
     // when clicked make the button dark blue and all the other buttons light blue
     button.onclick = function() {
-        var buttons = document.getElementsByClassName("button_a");
+        var buttons = document.getElementsByClassName("button-a");
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].style.backgroundColor = "#222";
         }
@@ -411,24 +394,11 @@ for (var i = 6; i <= 18; i++) {
     }
 
     col.appendChild(button);
-    row_button.appendChild(col);
-    }
-
-// make a new row for the h3 of "Select Height"
-var row = document.createElement("div");
-row.className = "custom-wrapper";
-var col = document.createElement("div");
-var h5 = document.createElement("h5");
-h5.innerHTML = "Estatura:";
-col.appendChild(h5);
-row.appendChild(col);
-calc.appendChild(row);
+    age_wrapper.appendChild(col);
+}
 
 // make a new set of buttons for height: Alto, Promedio, Pequeño
-var row_button = document.createElement("div");
-row_button.className = "custom-wrapper";
-calc.appendChild(row_button);
-
+var height_wrapper = document.getElementById("height-wrapper");
 var heights = ["Pequeño", "Promedio", "Alto"];
 for (var i = 0; i < heights.length; i++) {
     var col = document.createElement("div");
@@ -436,12 +406,12 @@ for (var i = 0; i < heights.length; i++) {
     var button = document.createElement("button");
     button.innerHTML = heights[i];
 
-    // give these buttons the class of button_h
-    button.className = "button_h";
+    // give these buttons the class of button-h
+    button.className = "button-h";
 
     // when clicked make the button dark blue and all the other buttons light blue
     button.onclick = function() {
-        var buttons = document.getElementsByClassName("button_h");
+        var buttons = document.getElementsByClassName("button-h");
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].style.backgroundColor = "#222";
         }
@@ -449,24 +419,11 @@ for (var i = 0; i < heights.length; i++) {
     }
 
     col.appendChild(button);
-    row_button.appendChild(col);
-    }
-
-// make a new row for the h3 of "Select Weight"
-var row = document.createElement("div");
-row.className = "custom-wrapper";
-var col = document.createElement("div");
-var h5 = document.createElement("h5");
-h5.innerHTML = "Complexi&oacute;n:";
-col.appendChild(h5);
-row.appendChild(col);
-calc.appendChild(row);
+    height_wrapper.appendChild(col);
+}
 
 // make a new set of buttons for weight: Heavy, Promedio, Light
-var row_button = document.createElement("div");
-row_button.className = "custom-wrapper";
-calc.appendChild(row_button);
-
+var weight_wrapper = document.getElementById("weight-wrapper");
 var strengths = ["Pequeño", "Promedio", "Robusto"];
 for (var i = 0; i < strengths.length; i++) {
     var col = document.createElement("div");
@@ -474,12 +431,12 @@ for (var i = 0; i < strengths.length; i++) {
     var button = document.createElement("button");
     button.innerHTML = strengths[i];
 
-    // give these buttons the class of button_w
-    button.className = "button_w";
+    // give these buttons the class of button-w
+    button.className = "button-w";
 
     // when clicked make the button dark blue and all the other buttons light blue
     button.onclick = function() {
-        var buttons = document.getElementsByClassName("button_w");
+        var buttons = document.getElementsByClassName("button-w");
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].style.backgroundColor = "#222";
         }
@@ -487,24 +444,11 @@ for (var i = 0; i < strengths.length; i++) {
     }
 
     col.appendChild(button);
-    row_button.appendChild(col);
-    }
-
-// make a new row for the h5 of "Select Skill Level"
-var row = document.createElement("div");
-row.className = "custom-wrapper";
-var col = document.createElement("div");
-var h5 = document.createElement("h5");
-h5.innerHTML = "Nivel:";
-col.appendChild(h5);
-row.appendChild(col);
-calc.appendChild(row);
+    weight_wrapper.appendChild(col);
+}
 
 // make a new set of buttons for skill level: Beginner, Intermediate, Adv.
-var row_button = document.createElement("div");
-row_button.className = "custom-wrapper";
-calc.appendChild(row_button);
-
+var skill_wrapper = document.getElementById("skill-wrapper");
 var skills = ["Principiante", "Intermedio", "Avanzado"];
 for (var i = 0; i < skills.length; i++) {
     var col = document.createElement("div");
@@ -512,12 +456,12 @@ for (var i = 0; i < skills.length; i++) {
     var button = document.createElement("button");
     button.innerHTML = skills[i];
 
-    // give these buttons the class of button_s
-    button.className = "button_s";
+    // give these buttons the class of button-s
+    button.className = "button-s";
 
     // when clicked make the button dark blue and all the other buttons light blue
     button.onclick = function() {
-        var buttons = document.getElementsByClassName("button_s");
+        var buttons = document.getElementsByClassName("button-s");
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].style.backgroundColor = "#222";
         }
@@ -525,34 +469,12 @@ for (var i = 0; i < skills.length; i++) {
     }
 
     col.appendChild(button);
-    row_button.appendChild(col);
-    }
-
-// make the results row
-var row = document.createElement("div");
-row.className = "custom-wrapper";
-
-// make the 'Bat Size' h3
-var col = document.createElement("div");
-var h5 = document.createElement("h5");
-h5.innerHTML = "Tama&ntilde;o del bate recomendado: ";
-h5.id = "bat_size_recommendation";
-col.appendChild(h5);
-row.appendChild(col);
-calc.appendChild(row);
-
-// make the ???
-var col = document.createElement("div");
-col.className = "col-12";
-var p = document.createElement("p");
-p.id = "bat_size";
-p.innerHTML = "???";
-col.appendChild(p);
-row.appendChild(col);
+    skill_wrapper.appendChild(col);
+}
 
 // get the value of the selected age
 function getAge() {
-    var buttons = document.getElementsByClassName("button_a");
+    var buttons = document.getElementsByClassName("button-a");
     // set a varialbe of age to the value of the selected button
     for (var i = 0; i < buttons.length; i++) {
         if (buttons[i].style.backgroundColor == "rgb(30, 115, 190)") {
@@ -563,7 +485,7 @@ function getAge() {
 
 // get the value of the selected height
 function getHeight() {
-    var buttons = document.getElementsByClassName("button_h");
+    var buttons = document.getElementsByClassName("button-h");
     for (var i = 0; i < buttons.length; i++) {
         if (buttons[i].style.backgroundColor == "rgb(30, 115, 190)") {
             return buttons[i].innerHTML;
@@ -573,7 +495,7 @@ function getHeight() {
 
 // get the value of the selected weight
 function getWeight() {
-    var buttons = document.getElementsByClassName("button_w");
+    var buttons = document.getElementsByClassName("button-w");
     for (var i = 0; i < buttons.length; i++) {
         if (buttons[i].style.backgroundColor == "rgb(30, 115, 190)") {
             return buttons[i].innerHTML;
@@ -583,7 +505,7 @@ function getWeight() {
 
 // get the value of the selected skill level
 function getSkill() {
-    var buttons = document.getElementsByClassName("button_s");
+    var buttons = document.getElementsByClassName("button-s");
     for (var i = 0; i < buttons.length; i++) {
         if (buttons[i].style.backgroundColor == "rgb(30, 115, 190)") {
             return buttons[i].innerHTML;
