@@ -405,9 +405,9 @@ for (var i = 6; i <= 18; i++) {
     button.onclick = function() {
         var buttons = document.getElementsByClassName("button_a");
         for (var i = 0; i < buttons.length; i++) {
-            buttons[i].style.backgroundColor = "#F1EEE9";
+            buttons[i].style.backgroundColor = "#222";
         }
-        this.style.backgroundColor = "#EC994B";
+        this.style.backgroundColor = "#1e73be";
     }
 
     col.appendChild(button);
@@ -443,9 +443,9 @@ for (var i = 0; i < heights.length; i++) {
     button.onclick = function() {
         var buttons = document.getElementsByClassName("button_h");
         for (var i = 0; i < buttons.length; i++) {
-            buttons[i].style.backgroundColor = "#F1EEE9";
+            buttons[i].style.backgroundColor = "#222";
         }
-        this.style.backgroundColor = "#EC994B";
+        this.style.backgroundColor = "#1e73be";
     }
 
     col.appendChild(button);
@@ -481,9 +481,9 @@ for (var i = 0; i < strengths.length; i++) {
     button.onclick = function() {
         var buttons = document.getElementsByClassName("button_w");
         for (var i = 0; i < buttons.length; i++) {
-            buttons[i].style.backgroundColor = "#F1EEE9";
+            buttons[i].style.backgroundColor = "#222";
         }
-        this.style.backgroundColor = "#EC994B";
+        this.style.backgroundColor = "#1e73be";
     }
 
     col.appendChild(button);
@@ -519,9 +519,9 @@ for (var i = 0; i < skills.length; i++) {
     button.onclick = function() {
         var buttons = document.getElementsByClassName("button_s");
         for (var i = 0; i < buttons.length; i++) {
-            buttons[i].style.backgroundColor = "#F1EEE9";
+            buttons[i].style.backgroundColor = "#222";
         }
-        this.style.backgroundColor = "#EC994B";
+        this.style.backgroundColor = "#1e73be";
     }
 
     col.appendChild(button);
@@ -555,7 +555,7 @@ function getAge() {
     var buttons = document.getElementsByClassName("button_a");
     // set a varialbe of age to the value of the selected button
     for (var i = 0; i < buttons.length; i++) {
-        if (buttons[i].style.backgroundColor == "rgb(236, 153, 75)") {
+        if (buttons[i].style.backgroundColor == "rgb(30, 115, 190)") {
             return buttons[i].innerHTML;
         }
     }
@@ -565,7 +565,7 @@ function getAge() {
 function getHeight() {
     var buttons = document.getElementsByClassName("button_h");
     for (var i = 0; i < buttons.length; i++) {
-        if (buttons[i].style.backgroundColor == "rgb(236, 153, 75)") {
+        if (buttons[i].style.backgroundColor == "rgb(30, 115, 190)") {
             return buttons[i].innerHTML;
         }
     }
@@ -575,7 +575,7 @@ function getHeight() {
 function getWeight() {
     var buttons = document.getElementsByClassName("button_w");
     for (var i = 0; i < buttons.length; i++) {
-        if (buttons[i].style.backgroundColor == "rgb(236, 153, 75)") {
+        if (buttons[i].style.backgroundColor == "rgb(30, 115, 190)") {
             return buttons[i].innerHTML;
         }
     }
@@ -585,7 +585,7 @@ function getWeight() {
 function getSkill() {
     var buttons = document.getElementsByClassName("button_s");
     for (var i = 0; i < buttons.length; i++) {
-        if (buttons[i].style.backgroundColor == "rgb(236, 153, 75)") {
+        if (buttons[i].style.backgroundColor == "rgb(30, 115, 190)") {
             return buttons[i].innerHTML;
         }
     }
