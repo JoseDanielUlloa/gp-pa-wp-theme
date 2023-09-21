@@ -370,9 +370,6 @@ var bat_sizing = [
     [3, 3, 3, 18, '34/31'],
 ]
 
-// find the div that has the id of bat_size_calc
-var calc = document.getElementById("bat_size_calc");
-
 // make a div for ages 6 to 18
 var age_wrapper = document.getElementById("age-wrapper");
 for (var i = 6; i <= 18; i++) {
@@ -535,7 +532,6 @@ document.onclick = function() {
         height_ = 3;
     }
 
-
     if (weight == "Pequeño") {
         weight_ = 1;
     } else if (weight == "Promedio") {
@@ -543,7 +539,6 @@ document.onclick = function() {
     } else if (weight == "Robusto") {
         weight_ = 3;
     }
-
 
     if (skill == "Principiante") {
         skill_ = 1;
@@ -556,11 +551,9 @@ document.onclick = function() {
     // add the bat size and button links to the page
     for (var i = 0; i < bat_sizing.length; i++) {
         if (bat_sizing[i][3] == age_ && bat_sizing[i][0] == height_ && bat_sizing[i][1] == weight_ && bat_sizing[i][2] == skill_) {
-            console.log(bat_sizing[i]);
 
-            // append the p with the id of p.id = "bat_size"; with the bat_sizing[i][4]
-            var p = document.getElementById("bat_size");
-            p.innerHTML = bat_sizing[i][4];
+            // append the p with the id of p.id = "bat-size"; with the bat_sizing[i][4]
+            document.getElementById("bat-size").innerHTML = bat_sizing[i][4];
         }
     }
 }
