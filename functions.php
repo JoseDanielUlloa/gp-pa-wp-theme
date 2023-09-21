@@ -55,6 +55,7 @@ add_action('wp_enqueue_scripts', 'custom_search_scripts');
 function baseball_bat_size_scripts() {
     if ( is_single(array(77, 128)) ) {
     	wp_enqueue_style( 'baseball-bat-size-style', '/wp-content/themes/generatepress-theme-child/css/baseball-bat-size-style.css', null );
+        wp_enqueue_script( 'baseball-bat-size-script', '/wp-content/themes/generatepress-theme-child/js/baseball-bat-size.js', array(), null, true );
     }
 }
 add_action('wp_enqueue_scripts', 'baseball_bat_size_scripts');
