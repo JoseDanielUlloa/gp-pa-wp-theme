@@ -19,7 +19,7 @@
 
 /***** Elements *****/
 
-.button_a, .button_h, .button_w, .button_s {
+.button-a, .button-h, .button-w, .button-s {
     background-color: rgb(34, 34, 34);
     color: #FFF;
     border-radius: 5px;
