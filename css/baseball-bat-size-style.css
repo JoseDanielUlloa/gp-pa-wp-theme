@@ -19,12 +19,17 @@
 
 /***** Elements *****/
 
+.calc-headings {
+    margin: 0.5em 0;
+}
+
 .button-a, .button-h, .button-w, .button-s {
     background-color: rgb(34, 34, 34);
     color: #FFF;
     border-radius: 5px;
     width: 100%;
     margin: 5px;
+    padding: 0;
 }
 
 .col-12 p {
